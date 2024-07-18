@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login</title>
+    {% load static %}
+    <link rel="stylesheet"href="{% static 'css/style3.css'%}">
+</head>
+<body>
+    <form action="/logout/" method="POST"autocomplete=off>
+    {% csrf_token %}
+        <header>
+            <h2 class="logo">Your profile</h2>
+            <nav class="navigation">
+             <a href="#">About</a>
+             <a  href="#">Info</a>
+             <a  href="#">Contact</a>
+             
+             <button class="btnLogin">Logout</button>
+            </nav>         
+        </header>  
+    </form>          
+            
+             
+    
+    
+        
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You For the Registering</title>
+    {% load static %}
+    <link rel="stylesheet"href="{% static 'css/style1.css'%}">
+
+</head>
+<body>
+    <div class="register">
+        <form action="/login/" method="POST" autocomplete="off">
+            {% csrf_token %}
+            <h1>Thank You For The Registration</h1>
+            <p>Thank you for registering for our servoce. We are exctited to have you as a member of our community!.</p>
+            <p>If you have any questions or need futher assistance, please feel free to contact us.</p>
+            <p>The Registeration.</p>
+            <div class="button">
+                <input type="submit" class="btn" value="Login">
+            </div>
+        </form>
+    </div>        
+
+</body>
+</html>

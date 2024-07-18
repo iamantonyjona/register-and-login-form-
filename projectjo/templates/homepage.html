@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The page</title>
+    {% load static %}
+    <link rel="stylesheet"href="{% static 'css/style3.css'%}">
+</head>
+<body>
+    <form action="/login/" method="POST"autocomplete=off>
+        {% csrf_token %}
+    
+        <header>
+            <h2 class="logo">THEpage</h2>
+            <nav class="navigation">
+                 <a href="http://127.0.0.1:8000/">Home</a>
+                 <a  href="#">About</a>
+                 <a href="#">Contact</a>
+                 <a href="http://127.0.0.1:8000/home/">Register</a>
+                 <button class="btnLogin">Login</button>
+            </nav>
+        </header>
+    </form>
+</body>
+</html>
